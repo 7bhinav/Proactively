@@ -1,0 +1,258 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  /* Body */
+  body {
+    background-color: #F7F9FC; /* Light gray background */
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* Header Section */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: #FFFFFF;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .header .logo {
+    font-size: 2rem;
+    font-weight: 600;
+    color: black; /* Yellow color used in the Figma design */
+  }
+  
+  .header .nav a {
+    margin-right: 20px;
+    text-decoration: none;
+    color: #757575; /* Gray color for navigation links */
+    transition: color 0.3s;
+  }
+  
+  .header .nav a:hover {
+    color: wheat; /* Hover color to match brand color */
+  }
+  
+  .header .user-menu {
+    display: flex;
+    align-items: center;
+  }
+  
+  .header .user-menu a {
+    margin-left: 9px;
+    text-decoration: none;
+    color: #757575;
+    transition: color 0.3s;
+  }
+  
+  .header .user-menu a:hover {
+    color: #FF7043; /* Red color for hover effect */
+  }
+  
+  /* Hero Section */
+  .hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 100px;
+    background: linear-gradient(135deg, #ffffff, #cae0f1); /* Gradient for hero section */
+    color: #FFFFFF;
+  }
+  
+  .hero .carousel {
+    flex: 1;
+    position: relative;
+  }
+ 
+  
+  .hero .carousel img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .hero .carousel img:hover {
+    transform: scale(1.05);
+  }
+  
+  .hero .hero-content {
+    flex: 1.5;
+    padding-left: 30px;
+  }
+  
+  .hero h1 {
+    color: black;
+    font-size: 4rem;
+    margin-bottom: 20px;
+  }
+  
+  .hero h1 span {
+    color: rgba(94, 206, 208, 0.877); /* Red accent color */
+  }
+  
+  .hero .search-bar {
+    display: flex;
+    margin-top: 30px;
+  }
+  
+  .hero .search-bar input {
+    flex: 1;
+    padding: 15px;
+    margin-right: 10px;
+    border: 2px solid #E0E0E0;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  .hero .search-bar button {
+    padding: 15px 30px;
+    background-color: #FF7043; /* Red button color */
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .hero .search-bar button:hover {
+    background-color: #F9A825; /* Hover effect for button */
+  }
+  
+  /* How It Works Section */
+  .how-it-works {
+    padding: 50px 100px;
+    text-align: left;
+    background-color: #FFFFFF;
+  }
+  
+  .how-it-works h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: 600;
+    color:#757575;
+    
+  }
+  .how-it-works span{
+    background: linear-gradient(to right, #ffebd7, #ffad80);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+  }
+  
+  .how-it-works p {
+    font-size: 1.2rem;
+    color: #757575; /* Grey color for subtitle */
+    
+  }
+  
+  .how-it-works .pillars {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .how-it-works .pill-button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    background-color: #F1F1F1;
+    border: 1px solid #E0E0E0;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .how-it-works .pill-button:hover {
+    background-color: #F9A825; /* Hover effect for pills */
+    color: #FFFFFF;
+  }
+  
+  .how-it-works .cards {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+  }
+  
+  .how-it-works .card {
+    background: #F9F9F9;
+    border: 1px solid #E0E0E0;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .how-it-works .card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .how-it-works .card img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .how-it-works .card p {
+    font-size: 1.25rem;
+    margin-top: 10px;
+  }
+  
+  .how-it-works .card small {
+    font-size: 0.875rem;
+    color: #757575;
+  }
+  
+  /* Footer Section */
+  .footer {
+    background-color: #F9A825; /* Brand color used in footer */
+    padding: 20px;
+    color: #FFFFFF;
+    text-align: center;
+  }
+  
+  /* Media Queries for Responsiveness */
+  @media (max-width: 1200px) {
+    .hero {
+      flex-direction: column;
+      padding: 30px;
+    }
+  
+    .hero .carousel {
+      margin-bottom: 20px;
+    }
+  
+    .how-it-works .cards {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .how-it-works .card {
+      margin-bottom: 20px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .hero h1 {
+      font-size: 2.2rem;
+    }
+  
+    .hero .search-bar input,
+    .hero .search-bar button {
+      padding: 10px;
+    }
+  
+    .header .nav {
+      display: none;
+    }
+  
+    .header .user-menu {
+      display: block;
+    }
+  }
