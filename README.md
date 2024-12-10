@@ -12,6 +12,6 @@ This project is an assignment provided by Proactively, where I worked on develop
 <img width="1440" alt="Screenshot 2024-12-10 at 9 44 12 PM" src="https://github.com/user-attachments/assets/2d9c6013-c33e-490f-aae0-86e4227b2eb2">
 
 
-<img width="1440" alt="Screenshot 2024-12-10 at 9 42 00 PM" src="https://github.com/user-attachments/assets/d6e880e1-8b4c-409a-95bb-b85dfe99bc8b">
+
 
 
